@@ -28,4 +28,9 @@ public class Academician extends Employee{
     public void attendClass() {
         System.out.println(this.getNameSurname() + " entered the class");
     }
+
+    @Override
+    public void entry() {
+        System.out.println(this.getNameSurname() + " academician entered the university");
+    }
 }

@@ -14,4 +14,9 @@ public class Lecturer extends Academician{
     public void setDoorNumber(String doorNumber) {
         this.doorNumber = doorNumber;
     }
+
+    @Override
+    public void entry() {
+        System.out.println(this.getNameSurname() + " lecturer entered the university");
+    }
 }

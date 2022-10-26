@@ -10,7 +10,7 @@ public class Main {
 
         Lecturer l1 = new Lecturer("Fuat","0123","f@gm.com","Ceng","noob","21");
 
-        Assistant a1 = new Assistant("Faik Yilmaz","123","gk@g.com","energy eng.","assistant","9-16");
+        Assistant as1 = new Assistant("Faik Yilmaz","123","gk@g.com","energy eng.","assistant","9-16");
 
         LabAssistant la1 = new LabAssistant("Seref salih","1232341","ss@gm.com","lab assistant","laborant","9-16");
 
