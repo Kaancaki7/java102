@@ -9,6 +9,6 @@ public class Main {
         harryPotter.setPageNumber(200);
         System.out.println("harry potter yeni sayfa sayısı:" + harryPotter.getPageNumber());
         lordOfTheRings.setPageNumber(-300);
-        
+
     }
 }
