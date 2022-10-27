@@ -14,6 +14,6 @@ public class Main {
 
         LabAssistant la1 = new LabAssistant("Seref salih","1232341","ss@gm.com","lab assistant","laborant","9-16");
 
-        
+
     }
 }
