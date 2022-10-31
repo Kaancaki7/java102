@@ -1,5 +1,7 @@
 package adventuregame;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Scanner;
 
 public class Player {
@@ -9,9 +11,12 @@ public class Player {
     private String name;
     private String characterName;
     private Scanner sc = new Scanner(System.in);
+    private Inventory inventory;
 
     public Player(String name) {
+
         this.name = name;
+        this.inventory = new Inventory();
     }
 
     public void selectCharacter() {
@@ -56,8 +61,16 @@ public class Player {
         this.setName(gameCharacter.getName());
     }
 
+    public void printInfo() {
+        System.out.println(
+                "Gun : " + this.getInventory().getWeapon().getName() +
+                        " Damage : " + this.getDamage() +
+                        " Health : " + this.getHealthy() +
+                        " Money : " + this.getMoney());
+    }
+
     public int getDamage() {
-        return this.damage;
+        return this.damage + this.getInventory().getWeapon().getDamage();
     }
 
     public void setDamage(int damage) {
@@ -96,4 +109,11 @@ public class Player {
         this.name = name;
     }
 
+    public Inventory getInventory() {
+        return inventory;
+    }
+
+    public void setInventory(Inventory inventory) {
+        this.inventory = inventory;
+    }
 }

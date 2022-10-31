@@ -15,5 +15,36 @@ public class Game {
         System.out.println();
         System.out.println("Choose your character!");
         player.selectCharacter();
+
+        System.out.println();
+        Location location = null;
+        while (true) {
+            player.printInfo();
+            System.out.println();
+            System.out.println(">>>>>>>>REGION<<<<<<<<");
+            System.out.println("----------------------------");
+            System.out.println("1 - Safe House");
+            System.out.println("2 - Tool Store");
+            System.out.println("----------------------------");
+            System.out.print("Select a region :");
+            int selectLoc = sc.nextInt();
+
+            switch (selectLoc) {
+                case 1:
+                    location = new SafeHouse(player);
+                    break;
+                case 2:
+                    location = new ToolStore(player);
+                    break;
+                default:
+                    location = new SafeHouse(player);
+                    break;
+            }
+
+            if (!location.onLocation()) {
+                System.out.println("GAME OVER!");
+                break;
+            }
+        }
     }
 }
