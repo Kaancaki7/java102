@@ -71,8 +71,12 @@ public class Player {
                         "\nMoney : " + this.getMoney());
     }
 
-    public int getDamage() {
+    public int getTotalDamage() {
         return this.damage + this.getInventory().getWeapon().getDamage();
+    }
+
+    public int getDamage() {
+        return this.damage;
     }
 
     public void setDamage(int damage) {
