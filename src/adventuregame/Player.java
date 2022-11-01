@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Player {
     private int damage;
     private int healthy;
+    private int originalHealthy;
     private int money;
     private String name;
     private String characterName;
@@ -57,6 +58,7 @@ public class Player {
     public void initCharacter(GameCharacter gameCharacter) {
         this.setDamage(gameCharacter.getDamage());
         this.setHealthy(gameCharacter.getHealth());
+        this.setOriginalHealthy(gameCharacter.getHealth());
         this.setMoney(gameCharacter.getMoney());
         this.setName(gameCharacter.getName());
     }
@@ -88,6 +90,9 @@ public class Player {
     }
 
     public void setHealthy(int healthy) {
+        if (healthy < 0) {
+            healthy = 0;
+        }
         this.healthy = healthy;
     }
 
@@ -121,5 +126,13 @@ public class Player {
 
     public void setInventory(Inventory inventory) {
         this.inventory = inventory;
+    }
+
+    public int getOriginalHealthy() {
+        return originalHealthy;
+    }
+
+    public void setOriginalHealthy(int originalHealthy) {
+        this.originalHealthy = originalHealthy;
     }
 }
