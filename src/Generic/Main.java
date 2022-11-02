@@ -31,5 +31,20 @@ public class Main {
         t.showInfo();
 
 
+        System.out.println("-------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------");
+
+        //GENERİC İNTERFACE konusu için çalıştırıcam aşağıdakileri
+        //Bir sınıfın jenerik bir interface'i implemente edebilmesi için jenerik olması gerekir.
+        System.out.println("Generic - İnteface : ");
+
+        Student<String> stu = new Student<>();
+        stu.insert("avc");
+        stu.delete("avc");
+        stu.update("avc");
+        stu.select();
+
     }
 }
