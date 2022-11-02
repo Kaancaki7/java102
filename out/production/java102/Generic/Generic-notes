@@ -1,0 +1,19 @@
+    //undefined - tanımlanmamış
+        String s;
+
+        //null - değeri yok
+        String s1 = null;
+
+        //empty - içi boş
+        String s2 = "";
+
+
+- NullableInteger gibi hepsi için ayrı ayrı sınıf yazamayız burada generic yapılar devreye giriyor.
+
+public class Nullable<T> {...
+}
+
+burada generic kullandık elmaslar arasına herhangi bir isim veya harf gireceksin T gibi...
+değişkenin tipini T olarak tanımalayacaksın int,String... yerine.
+
+
