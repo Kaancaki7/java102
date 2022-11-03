@@ -7,7 +7,7 @@ public class UseOfThrows {
     //throws ile dahil ediyoruz kalıtım gibi.
     public static void checkAge(int age) throws Exception{
         if (age < 18) {
-            throw new Exception("you are not old enough");
+            throw new AgeCheckException("you are not old enough");
         }
         System.out.println("age appropriate");
     }
