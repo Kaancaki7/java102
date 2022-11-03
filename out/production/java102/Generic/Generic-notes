@@ -1,3 +1,4 @@
+-----------------------------------------------------------------------------------------------------------
     //undefined - tanımlanmamış
         String s;
 
@@ -7,7 +8,7 @@
         //empty - içi boş
         String s2 = "";
 
-
+-----------------------------------------------------------------------------------------------------------
 - NullableInteger gibi hepsi için ayrı ayrı sınıf yazamayız burada generic yapılar devreye giriyor.
 
 public class Nullable<T> {...
@@ -16,4 +17,32 @@ public class Nullable<T> {...
 burada generic kullandık elmaslar arasına herhangi bir isim veya harf gireceksin T gibi...
 değişkenin tipini T olarak tanımalayacaksın int,String... yerine.
 
+-----------------------------------------------------------------------------------------------------------
 
+-Bir sınıfın jenerik bir interface'i implemente edebilmesi için jenerik olması gerekir.
+
+-----------------------------------------------------------------------------------------------------------
+
+Jenerik sınıf veya metot tanımlarken parametre olarak aldığınız türü sınırlandırabilirsiniz. Örneğin,
+parametre olarak aldığım tür Number sınıfının alt sınıflarından biri olsun, diyebilirsiniz.
+Böyle bir durumda Number sınıfından türetilmemiş hiçbir sınıfı parametre olarak veremezsiniz.
+
+
+
+Tür sınırlandırması yaparken extends veya super deyimi kullanılır. Bu deyimlerden sonra bir
+sınıf veya arayüz ismi verilir. Bu deyimleri kullanarak parametre olarak jenerik türünü sınırlandırmış oluruz:
+
+
+
+extends deyimini kullandıysak yalnızca belirttiğimiz türü veya alt sınıflarını kullanabiliriz.
+Buna üst sınır (upper-bound) denir.
+
+
+super deyimini kullandıysak yalnızca belirttiğimiz türün üst sınıflarını kullanabiliriz.
+Buna alt sınır (lower-bound) denir.
+
+ör :
+
+public class Nullable<T extends Number> {....}
+
+yukarıdaki gibi extend edince sadece integer,float,double gibi değerler kullanılıyor.String kullanılamaz mesela.
