@@ -26,3 +26,8 @@ sıra öngörülemezken, LinkedHashSet öğeler arasında eklendikleri sırayla 
 Bir yineleyici kullanarak LinkedHashSet üzerinden geçiş yaparken, öğeler eklendikleri sırayla döndürülür.
 Kısaca hashSet'te sıra düzgün çıkmıyorken LinkedHashSet'te sıralama düzgün bir şekilde çıkar.
 
+TreeSet :
+
+HashSet'te sıralamaya müdahale edemiyorduk. LinkedHashSet'te sıralama bizim girdiğimiz gibi oluyordu.
+Özel bir sıralama yapmak istersek biz TreeSet kullanacağız.
+

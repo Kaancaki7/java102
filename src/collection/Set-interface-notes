@@ -26,3 +26,14 @@ sıra öngörülemezken, LinkedHashSet öğeler arasında eklendikleri sırayla 
 Bir yineleyici kullanarak LinkedHashSet üzerinden geçiş yaparken, öğeler eklendikleri sırayla döndürülür.
 Kısaca hashSet'te sıra düzgün çıkmıyorken LinkedHashSet'te sıralama düzgün bir şekilde çıkar.
 
+TreeSet :
+
+HashSet'te sıralamaya müdahale edemiyorduk. LinkedHashSet'te sıralama bizim girdiğimiz gibi oluyordu.
+Özel bir sıralama yapmak istersek biz TreeSet kullanacağız.
+
+Veri kümesine konulan elemanların verdiğiniz kurala göre sıralanmasını sağlar.
+Bunun sağlanabilmesi için kullanacağınız sınıfın “sıralanabilir” olması gerekmektedir.
+Bir sınıfın sıralanabilir olması için “Comparable” ya da "Comparator" interface’den kalıtım alıp “compareTo”
+metodunu doldurması gerekmektedir. Nesne üzerindeki “compareTo” fonksiyonu küçükten büyüğe doğal sıralama
+imkanı sağlar.
+
