@@ -1,0 +1,50 @@
+Collection Interface'ini implemente eden List Interface'i Java 5 ile jenerik (generic) olmuştur.
+Veriler, geliş sırasına göre sıralı (ordered) tutulur.
+
+List'lerin her elemanı bellekte kendine özgü bir alan tutar. List üzerinde veri ekleme ve bu verilere erişme
+indis(index) denilen integer sayılar üzerinden yapılır. Başlangıç indisi sıfırdır.
+
+
+
+List Interface'inden kalıtım alan sınıflarda, tekrarlı (duplicate) veya null değerli elemanlar tutulabilir.
+
+
+
+Dizilerin kullanıldığı her yerde List'ler kullanılabilirler ayrıca birbirlerine dönüştürülebilirler.
+Veri işlemeye yarayan metotlarından dolayı List'ler, programcılar, bu yapıları daha çok tercih ederler.
+
+--------------------------------------------------------------------------------------------------------------------
+
+LIST INTERFACE ALT SINIFLARI :
+
+-->ArrayList
+-->LinkedList
+-->Vector
+-->Stack
+
+NOT: Vector ve Stack sınıfları, legacy (miras) sınıflardır. Java 5'ten önceki versiyonlarında var olup, artık daha iyi
+alternatifleri olan sınıflardır. Hala bu sınıfları kullanan projeler olabileceği için tamamen kaldırılamazlar.
+
+--------------------------------------------------------------------------------------------------------------------
+
+Bu dizilere yeni eleman eklendikçe eğer boyutu yetmiyorsa, çalışma zamanında, arka tarafta var olan dizinin boyutunun
+2 katı olan yeni dizi tanımlanır. Eski dizideki elemanlar indis değerleri korunarak yeni diziye aktarılırlar.
+Esnek fakat maliyetli bir collection’dır.
+
+
+
+Veri saklamak ve veriye erişimin yoğun olduğu durumlar için ArrayList tercih edilir.
+
+
+
+ArrayList’ler tanımlanırken <>(diamond) operatörleri arasına içerisinde tutulacak değerlerin tipi yazılmalıdır.
+
+
+
+Araya ekleme veya silme işlemleri yapılması durumunda kaydırma işlemleri yapılması gerekir. Bu durum
+performansı düşürür.
+
+
+
+ArrayList sınıfı thread-safe değildir. Bir ArrayList’e aynı anda birden fazla thread erişebilir.
+Bu durum veri bütünlüğünü bozar.
