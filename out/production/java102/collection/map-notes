@@ -1,2 +1,4 @@
 -Maplere özel iterator yok yani listeyi iteratorla gezemeyiz.
 
+Map Interface somut sınıflarındandır. HashMap sınıfına, karışık eşleme de denilebilir. Eşleme tablosuna eleman ekleme,
+çıkartma işlemlerinde ve anahtarı verilen elemanı tabloda bulma işlemlerinde oldukça etkilidir.
