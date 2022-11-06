@@ -48,3 +48,23 @@ performansı düşürür.
 
 ArrayList sınıfı thread-safe değildir. Bir ArrayList’e aynı anda birden fazla thread erişebilir.
 Bu durum veri bütünlüğünü bozar.
+
+--------------------------------------------------------------------------------------------------------------------
+
+LinkedList :
+
+- ÖZET OLARAK ÇOK EKLEME ÇIKARMA YAPILACAK İŞLEMLERDE LİNKEDLİST TERCİH EDİLMELİ DAHA ÇOK ARAMA YAPILACAK
+İŞLEMLERDE İSE ARRAYLİST TERCİH EDİLMELİDİR.
+
+- Maliyet bakımından yukarıdaki madde önemlidir.
+
+-Kullanılacak veri grubunu bir listeye koymamız ve bu gruba veri ekleme işlemi sürekli yapılacaksa,
+LinkedList kullanılması önerilir.
+
+
+
+-LinkedList sınıfı, ArrayList gibi thread-safe değildir. Bu List türünde de veri bütünlüğünü sorunu vardır.
+
+
+
+-LinkedList, hem List interface'inden hem Queue (Kuyruk) interface'inden miras alan bir sınıftır.
