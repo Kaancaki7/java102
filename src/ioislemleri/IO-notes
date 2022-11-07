@@ -70,3 +70,7 @@ InputStream soyut (Abstract) sınıfını miras alır.
 read() : Dosyadan tek baytlık veri okur.
 
 read(byte[] array) : dosyadan verileri bayt cinsinde okur ve belirtilen dizide depolar
+
+--------------------------------------------------------------------------------------------------------------------
+
+ByteArrayInputOutputStream genelde güvenlikle alakalı yerlerde kullanılır.
