@@ -64,5 +64,7 @@ public class ArrayListMain {
         liste3.clear();
         System.out.println(liste3);
 
+
+
     }
 }
