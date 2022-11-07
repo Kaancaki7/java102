@@ -45,3 +45,28 @@ Metotları :
 -delete() siler
 -read() okur
 -write() yazar
+
+--------------------------------------------------------------------------------------------------------------------
+
+InputStream Sınıfları :
+
+InputStream sınıfı byte akışını temsil eden bir abstract sınıftır ve Java.io paketinden gelmektedir.
+InputStream abstract bir sınıf olduğu için kendi başına kullanışlı değildir o yüzden InputStream'a ait alt sınıflar
+veri okumak için kullanılır.
+
+InputStream alt sınıfları :
+FileInputStream,
+ByteArrayInputStream,
+ObjectInputStream
+
+--------------------------------------------------------------------------------------------------------------------
+
+FileInputStream :
+
+Java.io paketinin FileInputStream sınıfı, dosyalardan verileri (bayt cinsinden) okumak için kullanılır.
+
+InputStream soyut (Abstract) sınıfını miras alır.
+
+read() : Dosyadan tek baytlık veri okur.
+
+read(byte[] array) : dosyadan verileri bayt cinsinde okur ve belirtilen dizide depolar
