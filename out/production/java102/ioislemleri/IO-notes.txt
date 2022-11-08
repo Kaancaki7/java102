@@ -2,8 +2,8 @@ FileInputStream - FileOutputStream ---> Dosya okuma ve yazmamızı sağlar.
 
 ByteArrayInputStream - ByteArrayOutputStream ---> Byte tipindeki arrayleri okumamızı ve yazmamızı sağlar
 
-ObjectStream ---> nesne okumamızı sağlar
-
+ObjectStream and Serialization
+|->  ObjectOutputStream - ObjectInputStream --->  ---> nesne okumamızı ve yazmamızı sağlar serialization sayesinde.
 --------------------------------------------------------------------------------------------------------------------
 
 Java’da veri giriş/çıkış işlemlerini, bir yerden başka bir yere (byte dizileri halinde) akan veriler
