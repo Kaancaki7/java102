@@ -1,3 +1,11 @@
+FileInputStream - FileOutputStream ---> Dosya okuma ve yazmamızı sağlar.
+
+ByteArrayInputStream - ByteArrayOutputStream ---> Byte tipindeki arrayleri okumamızı ve yazmamızı sağlar
+
+ObjectStream and Serialization ---> nesne okumamızı ve yazmamızı sağlar serialization sayesinde.
+
+--------------------------------------------------------------------------------------------------------------------
+
 Java’da veri giriş/çıkış işlemlerini, bir yerden başka bir yere (byte dizileri halinde) akan veriler
 olarak düşünebiliriz.
 
@@ -74,3 +82,4 @@ read(byte[] array) : dosyadan verileri bayt cinsinde okur ve belirtilen dizide d
 --------------------------------------------------------------------------------------------------------------------
 
 ByteArrayInputOutputStream genelde güvenlikle alakalı yerlerde kullanılır.
+
