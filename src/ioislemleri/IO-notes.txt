@@ -4,6 +4,8 @@ ByteArrayInputStream - ByteArrayOutputStream ---> Byte tipindeki arrayleri okuma
 
 ObjectStream and Serialization
 |->  ObjectOutputStream - ObjectInputStream --->  ---> nesne okumamızı ve yazmamızı sağlar serialization sayesinde.
+
+PrintStream ---> sadece outputu vardır byte yerine String(metin) yazdırır.
 --------------------------------------------------------------------------------------------------------------------
 
 Java’da veri giriş/çıkış işlemlerini, bir yerden başka bir yere (byte dizileri halinde) akan veriler
@@ -82,4 +84,17 @@ read(byte[] array) : dosyadan verileri bayt cinsinde okur ve belirtilen dizide d
 --------------------------------------------------------------------------------------------------------------------
 
 ByteArrayInputOutputStream genelde güvenlikle alakalı yerlerde kullanılır.
+
+--------------------------------------------------------------------------------------------------------------------
+
+PrintStream :
+
+sadece outputu var direkt çıktı vermek amaçlıdır.
+
+yaygın olarak okunabilir biçimde byte yerine "metin" yazmak için kullanılır.
+
+diğer çıktı akışlarından farklı olarak printstream ilkel verileri byte yerine String e dönüştürür.
+daha sonra bu verileri çıktı akışına yazar.
+
+--------------------------------------------------------------------------------------------------------------------
 
