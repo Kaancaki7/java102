@@ -12,6 +12,9 @@ sorununu ortadan kaldırır. Okuma ve yazmada.
 
 ***FileReader - FileWriter ---> InputStreamReader ve writer yerine bunu kullan işlem kalabalığından kurtulursun
 En genel olarak en kolay olarak içinde hepsini barndırdığı kullanımı bu. Kod fazlalığından kurtultursun
+
+***BufferedReader and BufferedWriter ---> EN ÇOK KULLANILAN OKUMA VE YAZMA İŞİDİR HEM HIZLI HEM DE KOLAY.
+EN ÇOK BUNU KULLANACAKSIN GENEL OLARAK.
 --------------------------------------------------------------------------------------------------------------------
 
 Java’da veri giriş/çıkış işlemlerini, bir yerden başka bir yere (byte dizileri halinde) akan veriler
