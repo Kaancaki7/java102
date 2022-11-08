@@ -10,7 +10,7 @@ PrintStream ---> sadece outputu vardır byte yerine String(metin) yazdırır.
 InputStreamReader - OutputStreamWriter ---> karakterlerle çalıltığı için türkçe veya başka bir dilden karakter
 sorununu ortadan kaldırır. Okuma ve yazmada.
 
-
+FileReader - FileWriter ---> InputStreamReader ve writer yerine bunu kullan işlem kalabalığından kurtulursun
 --------------------------------------------------------------------------------------------------------------------
 
 Java’da veri giriş/çıkış işlemlerini, bir yerden başka bir yere (byte dizileri halinde) akan veriler
