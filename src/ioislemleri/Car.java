@@ -7,6 +7,9 @@ public class Car implements Serializable {
     private String brand;
     private String model;
 
+    public Car() {
+
+    }
     public Car(String brand, String model) {
         this.brand = brand;
         this.model = model;
