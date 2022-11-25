@@ -25,6 +25,18 @@ public class Driver {
 
     }
 
+    //lambda ile filtreleme işlemi
+    public static void kisiFiltrele(List<Kisi> kisiler, KisiFiltresi kisiFiltresi) {
+
+        for (int i = 0; i < kisiler.size(); i++) {
+            Kisi kisi = kisiler.get(i);
+            if (kisiFiltresi.filtrele(kisi)) {
+                System.out.println(kisi);
+            }
+        }
+    }
+
+
     public static void main(String[] args) {
 
         Kisi kisi1 = new Kisi("Kaan", LocalDate.parse("1999-05-17"),"kaancaki0@gmail.com", Kisi.Cinsiyet.ERKEK);
@@ -37,10 +49,23 @@ public class Driver {
         kisiler.add(kisi3);
 
         //cinsiyeri kadın oılanlar listelenecek.
-        cinsiyeteGoreFiltrele(kisiler, Kisi.Cinsiyet.KADIN);
+        //cinsiyeteGoreFiltrele(kisiler, Kisi.Cinsiyet.KADIN);
 
         //yasa göre filtreler
-        yasaGoreFiltrele(kisiler,20);
+        //yasaGoreFiltrele(kisiler,20);
+
+        //kisi filtresi
+
+        //Anonim class ile kullandık interface'i
+        /*kisiFiltrele(kisiler, new KisiFiltresi() {
+            @Override
+            public boolean filtrele(Kisi kisi) {
+                return kisi.getYas() > 15 && kisi.getCinsiyet().equals(Kisi.Cinsiyet.ERKEK);
+            }
+        }); */
+
+        //lambda ile kullanacağız.
+        kisiFiltrele(kisiler,(kisi) -> kisi.getYas() > 15 && kisi.getCinsiyet().equals(Kisi.Cinsiyet.ERKEK));
 
     }
 }
