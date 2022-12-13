@@ -18,7 +18,7 @@ public class Driver {
                 .collect(Collectors.toList());
 
         collect.forEach(System.out::println);
-        
+
 
 
     }
